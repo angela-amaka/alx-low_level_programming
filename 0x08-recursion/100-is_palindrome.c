@@ -31,7 +31,7 @@ void check(char *s, int start, int end, int *flag)
 	{
 		if (s[start] == s[end])
 			*flag *= 0;
-		check(s, stat + 1, end -1, flag);
+		check(s, start + 1, end -1, flag);
 	}
 }
 
